@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Zhezhera Dmitriy hw03</title>
+	
+	<style>
+		.marginBtn{
+			margin-bottom: 0;
+		}
+		.text--bold{
+			font-weight: bold;
+			font-size: 16px;
+		}
+	</style>
+</head>
+<body>
+<a href="index.php"><- GO BACK</a>
+<h1>ADD NEW PERSON</h1>
+<div class="content" style="max-width: 1200px; margin: 0 auto ">
+	<h1>Форма</h1>
+	<form action="action.php" method="post">
+		<fieldset>
+			<legend class="text--bold">Коротко о себе</legend>
+			Имя <input type="text" name="name"> <br>
+			<br>
+			Фамилия <input type="text" name="lastname"> <br>
+			<br>
+			Пол
+			<input type="radio" id="male" name="gender"> <label for="male">мужской</label>
+			<input type="radio" id="female" name="gender"> <label for="female">женский</label>
+			<br>
+			<br>
+			Возрас <input type="number" name="age"> лет
+		</fieldset>
+		<br>
+		<fieldset>
+			<legend class="text--bold">Подробнее о себе</legend>
+			<input type="radio" id="youngMan" name="radioAge"> <label for="youngMan">молодой человек</label>
+			<br>
+			<input type="radio" id="girl" name="radioAge"> <label for="girl">девушка</label><br>
+			<input type="date" name="birthday"> Дата рождения <br>
+			<input type="text" name="familyStatus"> Семейное положение <br>
+			<input type="text" name="socialStatus"> Социальный статус <br>
+			<input type="text" name="residence"> Местожительство <br>
+			
+			<h2 class="text--bold">Что вы обучно делаете на выходных</h2>
+			<label><input type="checkbox" name="freeDaySleep"> Сплю</label><br>
+			<label><input type="checkbox" name="freeDayFriends"> Гуляю с друзьями</label><br>
+			<label><input type="checkbox" name="freeDayFishing"> Хожу на рыбалку</label><br>
+			<label><input type="checkbox" name="freeDayGames"> Играю в игры</label><br>
+			
+			<h2 class="text--bold">Рассказать о формах в книге, посвященной HTML</h2>
+			<select name="htmlBook" id="book">
+				<option value="htmlBook0">Site frequency</option>
+				<option value="htmlBook1">Site frequency1</option>
+				<option value="htmlBook2">Site frequency2</option>
+			</select>
+			
+			<h2 class="text--bold">Сколько кник Вы прочитали за свою жизнь</h2>
+			<label><input type="radio" name="radioBook"> 0-10</label><br>
+			<label><input type="radio" name="radioBook"> 11-20</label><br>
+			<label><input type="radio" name="radioBook"> 21-50</label><br>
+			<label><input type="radio" name="radioBook"> 50-</label><br>
+			
+			<h2 class="text--bold marginBtn">Ваши комментарии:</h2>
+			<textarea name="comments" id="comments" cols="80" rows="10"></textarea>
+			<br>
+			<br>
+			<select name="position" id="position" size="3">
+				<option value="position0">Первая позиция</option>
+				<option value="position1">Втрая позиция</option>
+				<option value="position2">Третья позиция</option>
+				<option value="position4">Четвертая позиция</option>
+			</select>
+		</fieldset>
+		<br>
+		<fieldset>
+			<legend class="text--bold">И в заключение</legend>
+			<input type="text" style="min-width: 250px" placeholder="Это поле было введено до Вас">
+			
+			<h2 class="marginBtn text--bold">Email</h2>
+			<input type="email" name="email">
+			
+			<h2 class="marginBtn text--bold">Хотите подписаться на самую модную рассылку спама</h2>
+			<i>Выберите катергорию</i>
+			<br>
+			<br>
+			<label><input type="checkbox" name="spam0">Оборудование</label><br>
+			<label><input type="checkbox" name="spam1">Как приготовить обед</label><br>
+			<label><input type="checkbox" name="spam2">Заработай милион за два дня</label><br>
+			
+			<h2 class="text--bold">На сколько сложная задача</h2>
+			<label><input type="radio" name="difficult">Совсем нет</label><br>
+			<label><input type="radio" name="difficult">Так себе</label><br>
+			<label><input type="radio" name="difficult">Еле справиилсь</label><br>
+		</fieldset>
+		<br>
+		<input type="submit" value="Отправить">
+	</form>
+</div>
+</body>
+</html>
